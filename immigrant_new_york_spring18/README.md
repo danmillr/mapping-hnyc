@@ -1,5 +1,13 @@
 ## GIS and Historical Mapping Resources for W2415: Immigrant New York
 
+Final Assignment, Option 3: Develop a map (or set of maps) and accompanying research paper where you explore themes from the course in relation to the spaces of historical New York City in which they occurred. Draw on historic maps, primary materials, available historic census data, and other sources to construct an argument, or narrate a series of events, spatially. 
+
+This might involve: tracking the locations mentioned in course readings and related primary sources and then overlaying these on historical maps from the period. It could also involve using historic census data from the National Historic GIS project (https://www.nhgis.org), or historic census micro data from the IPUMS project (https://usa.ipums.org/usa/complete_count.shtml) to investigate a course thematic in relation to a particular neighborhood or set of neighborhoods. Your project might investigate questions such as: how did successive immigrant waves co inhabit New York neighborhoods? What is the geography of key landmarks cited in primary texts? 
+
+Your task with this assignment is to investigate what new insights might be gleaned by considering space as an active agent in shaping historical trajectories. 
+
+You might craft a project where you annotate historic maps through a digital or physical collage, or, if you are interested in using a greater number of data sources, a project that requires the use of open source geographic information systems (GIS) software, QGIS (https://www.qgis.org).  
+
 ### Online Tutorials for QGIS: 
 * [Center for Spatial Research GIS and Data Vizualization Tutorials](http://c4sr.columbia.edu/tutorials)
 * [Programming Historian](https://programminghistorian.org/lessons/?topic=mapping)
