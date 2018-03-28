@@ -8,13 +8,6 @@ Your task with this assignment is to investigate what new insights might be glea
 
 You might craft a project where you annotate historic maps through a digital or physical collage, or, if you are interested in using a greater number of data sources, a project that requires the use of open source geographic information systems (GIS) software, QGIS (https://www.qgis.org).  
 
-#### In today's workshop we will....
-* Look at some examples of mapping projects dealing with historical questions.
-* Learn introductory skills and concepts involved in using open source geographic information software (QGIS) to map existing spatial datasets.
-* Have time for questions and for you to explore the datasets we are using further.
-
-
-
 A number of resources are available to you as you complete this work.
 
 
