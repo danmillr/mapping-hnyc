@@ -1,5 +1,5 @@
-## Tutorial Resources for Immigrant New York
-Spring 2018
+## Tutorial Resources for W2415: Immigrant New York
+### Spring 2018
 
 #### Index:
 * [00_DownloadingQGIS.md](https://github.com/CenterForSpatialResearch/gis_resources/blob/master/immigrant_new_york_spring18/introductory_tutorials/00_DownloadingQGIS.md): Instructions for downloading QGIS
