@@ -1,8 +1,5 @@
-
-Immigrant New York: introduction to mapping with QGIS
+##Immigrant New York: introduction to mapping with QGIS
 Spring 2018
-
-In this workshop we will use historic datasources
 
 In this workshop, you will learn introductory skills involved in using open source geographic information software (QGIS) to map existing spatial datasets. After the completion of this exercise, you should...
 
@@ -26,7 +23,7 @@ Specifically we are interested in learning:
 * In 1910 New York what neighborhoods had the highest concentrations of foreign born residents?
 * How do these patterns relate to the organization of social institutions represented by the 1910 New York Times map?
 
-![1910 NY Times map](https://github.com/CenterForSpatialResearch/gis_resources/tree/master/immigrant_new_york_spring18/introductory_tutorials/img/Socialmap.png)
+![1910 NY Times map](https://github.com/CenterForSpatialResearch/gis_resources/tree/master/immigrant_new_york_spring18/introductory_tutorials/img/Socialmap.jpg)
 
 #### To begin
 1. **Launch** QGIS. Your new blank map project will look like this:
