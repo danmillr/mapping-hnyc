@@ -1,5 +1,5 @@
 ## Immigrant New York: introduction to mapping with QGIS
-Spring 2018
+Fall 2018
 
 In this workshop, you will learn introductory skills involved in using open source geographic information software (QGIS) to map existing spatial datasets. After the completion of this exercise, you should...
 
