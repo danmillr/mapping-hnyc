@@ -153,6 +153,7 @@ For the purposes of this workshop data downloaded from NHGIS was pre-cleaned and
       * Be sure to select `Save only selected features`
       * Select `Add saved file to map` if it isn't already
 6. Open the attribute table of your new feature class, you'll notice that there are not any fields which contain the census counts information we downloaded from NHGIS. This is because these values were downloaded separately as a table. We will need to perform an operation called a **table join** to attach them to the geometry of our shape file
+
 #### Joining New Tabular Data with a Table Join
 To add further information to the attribute table of a vector GIS dataset we can perform an operation called a table join. A table join allows GIS users to combine tabular data with vector data based on an ***identical*** field in their attribute tables.
 1. Add a delimited the text layer to your project that we downloaded from NHGIS.
@@ -165,3 +166,59 @@ To add further information to the attribute table of a vector GIS dataset we can
 7. Joins are temporary relationships, we have not altered the underlying data at all. In order to make this permanent we need to save the layer as a new shapefile.
 
 You have now completed the table join.
+
+**Save your project**
+
+#### Carrying out a Spatial Join
+Another way of joining and sumamrizing data is by location. This is a powerful function of a GIS and opens up exciting possibilities for working with spatial data across different formats. A spatial join allows a user to join and summarize data between different shapefiles and geometries based on how they intersect, contain one another, etc.
+
+We are going to explore the Emigrant Savings Bank records that have been geocoded by the NYPL. These data are in point format, one point for every record - or address - associated with a historical bank transaction. They contain name, address and loan amount info, in the case of the data prepared for this tutorial. But there's more info available in the full dataset, including building material type and stories. You can explore all available data in the `csv` provided.
+1. Add the `emigrantCity_point_StatePlane.shp` file as a layer
+2. On the QGIS menu, navigate to `Vector / Data Management / Join attributes by location`
+3. In the `Join attributes by location` menu:
+  * Set the `Target vector layer` to your census tract file (polygons)
+  * Set the `Join vector layer` to the Emigrant savings bank points layer
+  * For `Geometric predicate` select `contains`
+  * For `Attribute summary` toggle to `Take Summary of Intersecting Features`. This will produce summary statistics for the join, such as the total amount of loans given to people in the entire Census Tract, the mean loan amount per tract, and the number of total loans given, as documented and transcibed in this database
+  * Leave the `Statistics for Summary` field as `sum, mean, min, max, median`. For every summary field that it can, this operation will produce those statistics. You can customize this as relevant to your research questions
+  * Click `Run`. QGIS will open the output layer in your map frame, at which point you can explore the attribute table, save it as a shapefile, and visualize the results of summarizing the `LoanAmount` field by location. 
+  
+Where were the most loans given out by the Emigrant Savings Bank (mode)? Which Census Tract received the most funds (max summary LoanAmount)? 
+
+**Save your project**
+
+#### Creating your Own Shapefile and Digitizing
+You can use QGIS to create your own shapefile or spatial dataset. This is useful for digitizing features on historical basemaps that you'd like to bring into your analysis. Using the 1910 Social Map of the Lower East Side as your resource, you will learn how to make a point file that captures and maps the different types of institutions on the Lower East Side.
+
+1. Organize and reorder the layers in the `Layers Panel` so that you are just looking at the 1910 Social Map. 
+2. On the QGIS menu select `Create New Shapefile Layer`
+3. In the `New Shapefile Layer` dialog box, you have the option to create a `point`, `line`, or `polygon` layer. For this task, we're going to select `point`, but if you were outling builing footprints, or tracing streets or pathways, you would want to select a relevant geometry
+4. As mentioned earlier, all Shapefiles have a projection: a system or set of rules for transforming the data so that it can be lined up and mapped in a GIS. Your QGIS project has a default projection, and each layer has it's own projection stored in its constituent .prj file. For this tutorial, you will want to select a projection that matches the other data you're working with. That's NAD 1983 State Plane for New York / Long Island.
+5. Now take a look at the basemap and its legend and consider: what kind of information are we trying to capture? We need to structure the attributes of our shapefile so that as we move over the map, drawing or plotting points based on marked locations of instutions, we can capture the type or category of institution in the attributes of our file. We'll need to add at least one field to the attributes of our new Shapefile to do so.
+6. Under **New Field**
+    * Enter `type` into the `Name` field
+    * Select `Text Data` and maximum length for text entries (80, the default, is fine for now)
+    * Click `Add to fields list`. You should see the new field appear in the list below.
+7. Click `OK`. 
+8. Your will have to name your file and specify the file path to where you would like to save it
+9. Click `Save`. You new Shapefile will be added to the map and `Layers Panel`.
+10. Click once on the file you just created in the `Layers Panel`
+11. Click the `Toggle Editing` button on the QGIS menu
+12. You have now turned on editing for your point file and can add points
+13. Click the `Add Feature` button
+14. Mouse over to a place on the 1910 Social Map where you'd like to add a point feature (based on where an institution is depcited)
+15. Click on where you'd like to add a new point feature with the editing cursor
+16. A dialog box will open, asking you to fill in the `type` field you created earlier. With CAPS LOCK on, enter the type of social institution based on the legend. You can leace the `ID` field blank. 
+17. Hit `enter/return` or click `OK`
+18. To stop editing, click the `Toggle Editing` button again and clik `Save` to save all of your changes.
+
+You can change the style of this point layer to reflect the different types of institutions on the map:
+19. Right click on your point layer in the `Layers Panel`
+20. Open the `Properties` menu
+21. Under the `Style` tab, select `Categorized` on the drop down menu
+22. Under the `Column` drop down, select `type` and click the `Classify` button below to assign a new color to each point by `type`
+23. Click `Apply` and `Ok` to commit these changes and exit the menu
+
+**Save your project**
+
+**Go further** You could now imagine joining these to block or census tracts by location to see how the distribution of certain types of institutions compares surrounding demographics. 
