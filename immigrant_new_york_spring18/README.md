@@ -28,11 +28,16 @@ The following are a few links to major resources for researching digitized histo
 	* [GIS and Spatial Data Research Guide](http://guides.library.columbia.edu/c.php?g=715646&p=5092264)
 	* The DSSC is the home of the [Lehman Map Collection](http://library.columbia.edu/locations/maps/about.html)
 	* [GeoData @ Columbia](http://geodata.cul.columbia.edu) is a tool for searching Columbia's spatial data holdings including historical maps, by location.
+	* [Durst Old York Library](https://dlc.library.columbia.edu/durst) at Avery contains scanned and geotagged maps, postcards, images and other NYC-focused arhival material
 
-**Scanned Historic Maps**
+* [NYPL Space / Time Directory Project](http://spacetime.nypl.org/)
+	* You can access historical spatial data on NYC at the Space / Time directory project, including building footprints from the 1850s, NYC Ward boundaries from 1703 to 1895, historical street centerlines (from 1850 to 1919), and the results of crowdsourced digitzation projects, including geolocated [Emigrant Savings Bank real estate records](http://emigrantcity.nypl.org/#/).
+
+**Scanned Historical Maps**
 * [New York Public Library Map Division](https://www.nypl.org/blog/2014/03/28/open-access-maps)
-	* Maps can be viewed through the [NYLP Digital Collections](http://digitalcollections.nypl.org/search/index?filters%5BphysicalLocation_mtxt_s%5D%5B%5D=Map+Division&keywords=&sort=dateDigitized_dt+desc)
-	* or through the [NYPL Map Warper](http://maps.nypl.org/warper/)
+	* Maps can be viewed through the [NYLP Digital Collections](http://digitalcollections.nypl.org/search/index?filters%5BphysicalLocation_mtxt_s%5D%5B%5D=Map+Division&keywords=&sort=dateDigitized_dt+desc) and largely consist of [fire insurance and property atlases](https://www.nypl.org/collections/nypl-recommendations/guides/fire-topo-property-maps) which are very useful resources for the kind of mapping you may want to carry out on this project
+	* They can also be viewed through the [NYPL Map Warper](http://maps.nypl.org/warper/)
+	* or you can search through NYPL's scanned and referenced map collection by location on this [map-based site](http://spacetime.nypl.org/maps-by-decade/#/)
 
 * [David Rumsey Map Collection](https://www.davidrumsey.com)
 
