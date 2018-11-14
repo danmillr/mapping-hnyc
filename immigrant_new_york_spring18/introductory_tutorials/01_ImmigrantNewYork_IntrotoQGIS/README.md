@@ -173,6 +173,7 @@ You have now completed the table join.
 Another way of joining and sumamrizing data is by location. This is a powerful function of a GIS and opens up exciting possibilities for working with spatial data across different formats. A spatial join allows a user to join and summarize data between different shapefiles and geometries based on how they intersect, contain one another, etc.
 
 We are going to explore the Emigrant Savings Bank records that have been geocoded by the NYPL. These data are in point format, one point for every record - or address - associated with a historical bank transaction. They contain name, address and loan amount info, in the case of the data prepared for this tutorial. But there's more info available in the full dataset, including building material type and stories. You can explore all available data in the `csv` provided.
+
 1. Add the `emigrantCity_point_StatePlane.shp` file as a layer
 2. On the QGIS menu, navigate to `Vector / Data Management / Join attributes by location`
 3. In the `Join attributes by location` menu:
@@ -199,6 +200,7 @@ You can use QGIS to create your own shapefile or spatial dataset. This is useful
     * Enter `type` into the `Name` field
     * Select `Text Data` and maximum length for text entries (80, the default, is fine for now)
     * Click `Add to fields list`. You should see the new field appear in the list below.
+
 7. Click `OK`. 
 8. Your will have to name your file and specify the file path to where you would like to save it
 9. Click `Save`. You new Shapefile will be added to the map and `Layers Panel`.
